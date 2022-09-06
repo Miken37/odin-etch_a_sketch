@@ -1,0 +1,51 @@
+body {
+    background: slategray;
+    
+}
+
+h1 {
+    color:rgb(233, 38, 64);
+    
+}
+button{
+    min-width: 100px;
+    margin-bottom: 10px;
+}
+
+.resetB{
+    margin-top: 50px;
+    margin-bottom: 1px;
+}
+
+.boxes{
+    flex: 1 0 auto;
+}
+
+.body-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-grid{
+    max-width: 1024px;
+    min-width: 1024px;
+    max-height: 1024px;
+    min-height: 1024px;
+    display: flex;
+    border-radius: 25px;
+    border: 40px rgb(233, 38, 64) solid;
+    flex-wrap: wrap;
+    
+}
+
+.container-buttons{
+    border-radius: 13px;
+    background-color: rgb(194, 194, 243);
+    height: 750px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
