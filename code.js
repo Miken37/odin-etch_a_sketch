@@ -5,14 +5,14 @@ function boxCreate (){
     box.setAttribute('style', `width: ${boxSize}px; height: ${boxSize}px; background: white`);
 }
 function gridSwap(){
-    let totalBoxes = 64;       
-    let boxes = Math.sqrt(totalBoxes);
-    let squareSize = 1024 / boxes;      //TOTAL size
-
+    let sideBoxes = prompt("How many boxes on one side?");   
+    let totalBoxes = sideBoxes*sideBoxes;    
     return totalBoxes;
 }
 function gridSize(){
-    let boxSize = 128;       
+    let boxes = Math.sqrt(totalBoxes);
+    let squareSize = 1024 / boxes;      //TOTAL size 1024
+    let boxSize = squareSize;       
     return boxSize;
 }
 
@@ -71,11 +71,8 @@ let eraserButton = document.querySelector(".eraser");
 eraserButton.addEventListener("click", () => {eraser()});
 
 const grid8 = document.querySelector(".grid");
-grid8.addEventListener("click", () => {gridSwap()});
+grid8.addEventListener("click", () => {location.reload()});
 
 
 let resetButton = document.querySelector(".resetB");
 resetButton.addEventListener("click", () => {location.reload()});
-
-let colourButton = document.querySelector(".colourSelect");
-colourButton.addEventListener("click", () => {boxClass.setAttribute('value', "#000000")})
